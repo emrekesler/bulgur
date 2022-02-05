@@ -8,9 +8,9 @@ function TinySlider() {
         <div className="flex justify-between w-full">
           <div className="tiny-slider w-full">
             <div className="tiny-slider-inner text-center md:text-left opacity-80 w-full">
-              <a href="#">The most common business debate isn't as black and white as you might think</a>
+              <a href="#">The most common business debate isnt as black and white as you might think</a>
               <a href="#">How the 10 worst business fails of all time could have been prevented </a>
-              <a href="#">The most common business debate isn't as black and white as you might think </a>
+              <a href="#">The most common business debate isnt as black and white as you might think </a>
             </div>
           </div>
         </div>
