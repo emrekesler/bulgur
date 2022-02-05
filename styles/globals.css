@@ -1,9 +1,11 @@
+@tailwind base;
+@tailwind components;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, Rubik, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,3 +16,19 @@ a {
 * {
   box-sizing: border-box;
 }
+.tns-outer {
+  @apply flex items-center justify-start;
+}
+.tns-outer .tns-controls {
+  @apply hidden gap-1  md:flex;
+}
+
+.tns-outer .tns-controls button {
+  @apply bg-white rounded-full text-center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 10px;
+}
+
+@tailwind utilities;
