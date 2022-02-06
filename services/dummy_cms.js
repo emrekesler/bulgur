@@ -74,6 +74,7 @@ function getBlogs() {
       },
       date: "2020-01-01",
       readTime: "5 min read",
+      slug: "the-best-places-to-visit-in-2020",
     },
     {
       image: "https://blogzine.webestica.com/assets/images/blog/4by3/02.jpg",
@@ -89,6 +90,7 @@ function getBlogs() {
       },
       date: "2020-01-01",
       readTime: "5 min read",
+      slug: "dirty-little-secrets-about-the-business-industry",
     },
     {
       image: "https://blogzine.webestica.com/assets/images/blog/4by3/03.jpg",
@@ -104,6 +106,7 @@ function getBlogs() {
       },
       date: "2020-01-01",
       readTime: "5 min read",
+      slug: "bad-habits-that-people-in-the-industry-need-to-quit",
     },
     {
       image: "https://blogzine.webestica.com/assets/images/blog/4by3/04.jpg",
@@ -119,6 +122,7 @@ function getBlogs() {
       },
       date: "2020-01-01",
       readTime: "5 min read",
+      slug: "around-the-web-20-fabulous-infographics-about-business",
     },
     ,
     {
@@ -135,13 +139,27 @@ function getBlogs() {
       },
       date: "2020-01-01",
       readTime: "5 min read",
+      slug: "7-common-mistakes-everyone-makes-while-traveling",
     },
   ];
 
   return blogs;
 }
 
+function getBlog(slug) {
+  let blogs = getBlogs();
+
+  let blog = blogs.find((blog) => {
+    if (blog != undefined) {
+      return blog.slug == slug;
+    }
+  });
+
+  return blog;
+}
+
 module.exports = {
   getHeadlines,
   getBlogs,
+  getBlog,
 };

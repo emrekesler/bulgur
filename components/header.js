@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Header() {
   return (
     <header className="container">
@@ -38,18 +40,21 @@ function Header() {
       </div>
       <div className="h-24 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="https://emrekesler.com.tr">
-            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.03 269.12" width="60">
-              <title>logo</title>
-              <rect width="224.08" height="34.05" rx="1.83" style={{ fill: "#2163e8" }} />
-              <rect y="235.07" width="224.08" height="34.05" rx="1.83" style={{ fill: "#2163e8" }} />
-              <path
-                d="M396.57,267.71,246.06,117.06l116.3-116c.29-.3.46-.67.51-.67h-47.1l-123.56,123H44c-1,0-2.38.64-2.38,1.65v30A2.9,2.9,0,0,0,44,157.51H204.84a2.52,2.52,0,0,0,1.66-.79l15.73-15.58L349.4,268.45h47.5C396.82,267.35,396.71,267.85,396.57,267.71Z"
-                transform="translate(0.13 -0.43)"
-                style={{ fill: "#2163e8" }}
-              />
-            </svg>
-          </a>
+          <Link href="/">
+            <a>
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 397.03 269.12" width="60">
+                <title>logo</title>
+                <rect width="224.08" height="34.05" rx="1.83" style={{ fill: "#2163e8" }} />
+                <rect y="235.07" width="224.08" height="34.05" rx="1.83" style={{ fill: "#2163e8" }} />
+                <path
+                  d="M396.57,267.71,246.06,117.06l116.3-116c.29-.3.46-.67.51-.67h-47.1l-123.56,123H44c-1,0-2.38.64-2.38,1.65v30A2.9,2.9,0,0,0,44,157.51H204.84a2.52,2.52,0,0,0,1.66-.79l15.73-15.58L349.4,268.45h47.5C396.82,267.35,396.71,267.85,396.57,267.71Z"
+                  transform="translate(0.13 -0.43)"
+                  style={{ fill: "#2163e8" }}
+                />
+              </svg>
+            </a>
+          </Link>
+
           <span> Emre Kesler </span>
         </div>
         <ul className="nav hidden lg:flex gap-8 flex-shrink-0 text-base font-medium text-gray-500">
