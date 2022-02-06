@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       </Head>
 
       <Header></Header>
-      <main>{children}</main>
+      {children}
     </>
   );
 }

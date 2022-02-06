@@ -58,6 +58,90 @@ function getHeadlines() {
   return headlines;
 }
 
+function getBlogs() {
+  let blogs = [
+    {
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/01.jpg",
+      category: {
+        name: "Travel",
+        color: "purple",
+      },
+      title: "The Best Places to Visit in 2020",
+      subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      user: {
+        name: "John Doe",
+        avatar: "https://blogzine.webestica.com/assets/images/avatar/03.jpg",
+      },
+      date: "2020-01-01",
+      readTime: "5 min read",
+    },
+    {
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/02.jpg",
+      category: {
+        name: "F1",
+        color: "green",
+      },
+      title: "Dirty little secrets about the business industry",
+      subtitle: "Place voice no arises along to. Parlors waiting so against me no. Wishing calling is warrant settled was lucky. Express besides it present if at an opinion visitor.",
+      user: {
+        name: "John Doe",
+        avatar: "https://blogzine.webestica.com/assets/images/avatar/03.jpg",
+      },
+      date: "2020-01-01",
+      readTime: "5 min read",
+    },
+    {
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/03.jpg",
+      category: {
+        name: "Gadgets",
+        color: "green",
+      },
+      title: "Bad habits that people in the industry need to quit",
+      subtitle: "For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected",
+      user: {
+        name: "John Doe",
+        avatar: "https://blogzine.webestica.com/assets/images/avatar/03.jpg",
+      },
+      date: "2020-01-01",
+      readTime: "5 min read",
+    },
+    {
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/04.jpg",
+      category: {
+        name: "Sports",
+        color: "blue",
+      },
+      title: "Around the web: 20 fabulous infographics about business",
+      subtitle: "Projection favorable Mrs can be projecting own. Thirty it matter enable become admire in giving. See resolved goodness felicity shy civility domestic had but.",
+      user: {
+        name: "John Doe",
+        avatar: "https://blogzine.webestica.com/assets/images/avatar/03.jpg",
+      },
+      date: "2020-01-01",
+      readTime: "5 min read",
+    },
+    ,
+    {
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/05.jpg",
+      category: {
+        name: "Sports",
+        color: "blue",
+      },
+      title: "7 common mistakes everyone makes while traveling",
+      subtitle: "Drawings offended yet answered Jennings perceive laughing six did far. Rooms oh fully taken by worse do. Points afraid but may end law lasted.",
+      user: {
+        name: "Jacqueline",
+        avatar: "https://blogzine.webestica.com/assets/images/avatar/04.jpg",
+      },
+      date: "2020-01-01",
+      readTime: "5 min read",
+    },
+  ];
+
+  return blogs;
+}
+
 module.exports = {
   getHeadlines,
+  getBlogs,
 };

@@ -6,7 +6,7 @@ function Headline() {
   let headlines = getHeadlines();
 
   return (
-    <div className="grid lg:grid-cols-2 lg:grid-rows-1 gap-6 pt-10 h-full md:h-128">
+    <div className="grid lg:grid-cols-2 lg:grid-rows-1 gap-6 mt-10 h-full">
       {headlines.find((item) => item.featured) && <HeadlineFeaturedItem item={headlines.find((item) => item.featured)} />}
 
       <div className="h-full md:h-[560px] rounded">
