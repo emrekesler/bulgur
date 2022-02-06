@@ -1,4 +1,4 @@
-import { getBlogs } from "../services/dummy_cms";
+import { getBlogs } from "services/dummy_cms";
 import BlogCard from "./blog-card";
 
 function Blogs() {
@@ -14,7 +14,7 @@ function Blogs() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {blogs
-          .filter((item) => !item.featured)
+          .filter((item) => !item.headline)
           .map((item, i) => {
             return <BlogCard key={i} item={item}></BlogCard>;
           })}

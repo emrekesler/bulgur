@@ -9,7 +9,7 @@ function HeadlineItem(props) {
   return (
     <div className={"relative z-0 min-h-[260px] lg:min-h-[0] h-full rounded " + className}>
       <div className="absolute inset-0 min-h-[260px]">
-        <img alt="" className="h-full w-full rounded-xl object-cover" layout="fill" src={item.image} />
+        <img alt="" className="h-full w-full rounded-xl object-cover" src={item.image} />
       </div>
       <div className="absolute inset-0 h-full rounded-xl flex flex-col items-start justify-end p-4 md:p-8">
         <button className={`bg-${item.category.color}-500 text-white items-center rounded text-tiny px-2 mb-2`}>• {item.category.name}</button>

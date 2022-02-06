@@ -162,8 +162,36 @@ function getBlog(slug) {
   return blog;
 }
 
+function getTrends() {
+  let trends = [
+    {
+      title: "Travel",
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/01.jpg",
+    },
+    {
+      title: "Business",
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/02.jpg",
+    },
+    {
+      title: "Marketing",
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/03.jpg",
+    },
+    {
+      title: "Photography",
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/04.jpg",
+    },
+    {
+      title: "Sports",
+      image: "https://blogzine.webestica.com/assets/images/blog/4by3/05.jpg",
+    },
+  ];
+
+  return trends;
+}
+
 module.exports = {
   getHeadlines,
   getBlogs,
   getBlog,
+  getTrends,
 };

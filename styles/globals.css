@@ -16,19 +16,9 @@ a {
 * {
   box-sizing: border-box;
 }
-.tns-outer {
-  @apply flex items-center justify-start;
-}
-.tns-outer .tns-controls {
-  @apply hidden gap-1  md:flex;
-}
 
-.tns-outer .tns-controls button {
-  @apply bg-white rounded-full text-center;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 10px;
+.swiper-slide {
+  @apply text-center md:text-left;
 }
 
 @tailwind utilities;

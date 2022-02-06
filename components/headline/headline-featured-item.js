@@ -20,7 +20,7 @@ function HeadlineFeaturedItem(props) {
         <p className="text-white font-normal mb-4">{item.subtitle}</p>
 
         <div className="hidden md:flex w-full justify-start items-center gap-4 text-white">
-          <img alt="" className="w-10 h-full rounded-full" layout="fill" src={item.user.avatar} />
+          <img alt="" className="w-10 h-full rounded-full" src={item.user.avatar} />
 
           <span>by {item.user.name}</span>
 

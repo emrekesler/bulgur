@@ -1,8 +1,8 @@
+import Sidebar from "@/components/shared/sidebar";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { getBlog, getBlogs } from "../../services/dummy_cms";
+import { getBlog } from "services/dummy_cms";
 import DefaultErrorPage from "next/error";
-import Sidebar from "../../components/sidebar";
 
 export default function BlogDetail() {
   const router = useRouter();
@@ -25,15 +25,15 @@ export default function BlogDetail() {
     <div className="container">
       <div className="flex flex-col justify-between gap-2">
         <div className="h-[400px] relative rounded-xl flex flex-col justify-center items-center">
-          <img alt="" className="h-full w-full rounded-xl object-cover" layout="fill" src={item.image} />
+          <img alt="" className="h-full w-full rounded-xl object-cover" src={item.image} />
           <div className="absolute h-full w-full rounded-xl object-cover bg-gradient-to-t from-black to-transparent opacity-60" />
           <div className="absolute w-full flex flex-col gap-6 items-center p-8 rounded-xl">
-            <button className="bg-green-500 w-32 text-white items-center rounded text-tiny px-2 ">• Car</button>
+            <button className={`bg-${item.category.color}-500 text-white items-center rounded text-tiny px-2`}>• {item.category.name}</button>
 
             <p className="text-white text-4xl font-medium text-center">{item.title}</p>
 
             <div className="flex justify-start items-center gap-4 text-white">
-              <img alt="" className="w-10 h-full rounded-full" layout="fill" src={item.user.avatar} />
+              <img alt="" className="w-10 h-full rounded-full" src={item.user.avatar} />
 
               <span>{item.user.name}</span>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getHeadlines } from "../services/dummy_cms";
+import { getHeadlines } from "services/dummy_cms";
 import HeadlineFeaturedItem from "./headline-featured-item";
 import HeadlineItem from "./headline-item";
 
@@ -9,8 +9,8 @@ export default function Headline() {
     <div className="grid lg:grid-cols-2 lg:grid-rows-1 gap-6 mt-10 h-full">
       {headlines
         .filter((item) => item.featured)
-        .map((item) => (
-          <Link key={item} href={`/blog/${encodeURIComponent(item.slug)}`}>
+        .map((item, index) => (
+          <Link key={index} href={`/blog/${encodeURIComponent(item.slug)}`}>
             <a>
               <HeadlineFeaturedItem item={headlines.find((item) => item.featured)} />
             </a>
@@ -22,7 +22,7 @@ export default function Headline() {
           {headlines.map((headline, index) => {
             if (!headline.featured) {
               return (
-                <Link href={`/blog/${encodeURIComponent(headline.slug)}`}>
+                <Link key={index} href={`/blog/${encodeURIComponent(headline.slug)}`}>
                   <a className={index === 1 ? "md:col-span-2" : ""}>
                     <HeadlineItem key={index} item={headline}></HeadlineItem>
                   </a>
