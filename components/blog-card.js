@@ -11,8 +11,8 @@ function BlogCard(props) {
     <Link href={`/blog/${encodeURIComponent(item.slug)}`}>
       <a>
         <div className="flex flex-col justify-between gap-2">
-          <div className="aspect-4/3  rounded-xl flex flex-col justify-end ">
-            <img alt="" className="h-full w-full rounded-xl object-cover" layout="fill" src={item.image} />
+          <div className="aspect-4/3 rounded-xl flex flex-col justify-end ">
+            <img alt="" className="aspect-4/3 h-full w-full rounded-xl object-cover" src={item.image} />
 
             <button className="absolute mx-4 my-5 bg-green-500 text-white items-center rounded text-tiny px-2 ">• Car</button>
           </div>

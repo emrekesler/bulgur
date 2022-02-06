@@ -1,5 +1,10 @@
 function getHeadlines() {
-  let headlines = [
+  let headlines = getBlogs().filter((blog) => blog.headline);
+  return headlines;
+}
+
+function getBlogs() {
+  let blogs = [
     {
       title: "Ten tell-tale signs you need to get a new startup.",
       subtitle: "No visited raising gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case.",
@@ -12,6 +17,8 @@ function getHeadlines() {
       readTime: "5 min read",
       category: { name: "Technology", color: "purple" },
       featured: true,
+      headline: true,
+      slug: "ten-tell-tale-signs-you-need-to-get-a-new-startup",
     },
     {
       title: "Double delight for Red Bull Racing Honda at damp Turkish Grand Prix",
@@ -25,6 +32,8 @@ function getHeadlines() {
       readTime: "5 min read",
       category: { name: "F1", color: "green" },
       featured: false,
+      headline: true,
+      slug: "double-delight-for-red-bull-racing-honda-at-damp-turkish-grand-prix",
     },
     {
       title: "Bi çıkıyo bi düşüyo",
@@ -37,8 +46,9 @@ function getHeadlines() {
       date: "Oct 15, 2022",
       readTime: "5 min read",
       category: { name: "Coin", color: "yellow" },
-
       featured: false,
+      headline: true,
+      slug: "bi-cikiyo-bi-dusuyo",
     },
     {
       title: "Sıklıkla az az acıkıyorum.",
@@ -52,14 +62,9 @@ function getHeadlines() {
       readTime: "5 min read",
       category: { name: "Food", color: "blue" },
       featured: false,
+      headline: true,
+      slug: "siklikla-az-az-acikiyorum",
     },
-  ];
-
-  return headlines;
-}
-
-function getBlogs() {
-  let blogs = [
     {
       image: "https://blogzine.webestica.com/assets/images/blog/4by3/01.jpg",
       category: {
@@ -124,7 +129,6 @@ function getBlogs() {
       readTime: "5 min read",
       slug: "around-the-web-20-fabulous-infographics-about-business",
     },
-    ,
     {
       image: "https://blogzine.webestica.com/assets/images/blog/4by3/05.jpg",
       category: {

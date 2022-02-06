@@ -13,9 +13,11 @@ function Blogs() {
         <span className="text-gray-500"> Latest breaking news, pictures, videos, and special reports</span>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {blogs.map((item, i) => {
-          return <BlogCard key={i} item={item}></BlogCard>;
-        })}
+        {blogs
+          .filter((item) => !item.featured)
+          .map((item, i) => {
+            return <BlogCard key={i} item={item}></BlogCard>;
+          })}
       </div>
     </section>
   );
