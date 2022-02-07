@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function HeadlineFeaturedItem(props) {
   let item = props.item;
 
@@ -10,7 +8,7 @@ function HeadlineFeaturedItem(props) {
   return (
     <div className="relative z-0 h-[400px] md:h-[560px] ">
       <div className="absolute inset-0 h-[400px] md:h-[560px]  ">
-        <Image alt="" className="h-full w-full rounded-xl object-cover" layout="fill" src={item.image} />
+        <img alt="" className="h-full w-full rounded-xl object-cover" src={item.image} />
       </div>
       <div className="absolute inset-0 h-[400px] md:h-[560px] flex flex-col items-start justify-end p-4 md:p-8 rounded-xl bg-gradient-to-t from-black to-transparent">
         <button className="bg-purple-500 text-white items-center rounded text-tiny px-2 mb-2">• {item.category.name}</button>
